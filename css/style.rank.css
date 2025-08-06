@@ -160,6 +160,7 @@ main {
 }
 .table td {
   background-color: #a87e56;
+  line-height: 1.4;
 }
 
 .btn-prox {
@@ -175,4 +176,30 @@ main {
   border-radius: 5px;
   cursor: pointer;
   font-size: 12px;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .busca {
+    width: 200px;
+  }
+
+  nav {
+    width: 90%;
+    margin: 140px auto 0 auto;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  .title {
+    gap: 3px;
+  }
 }
