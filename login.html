@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livro do Vale - Receitas Stardew Valley</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/img/animals-icon.png" alt="Logo" />
+        <h1>Livro do Vale</h1>
+      </div>
+      <div class="busca">
+        <input type="text" placeholder="Pesquisar" />
+        <img src="/img/vector.png" alt="Pesquisar" />
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html" class="nav-link">
+        <img src="/img/home.png" alt="Home" />
+        <span>Home</span>
+      </a>
+      <a href="./receitas.html" class="nav-link">
+        <img src="/img/bolo-rosa.png" alt="Receitas" />
+        <span>Receitas</span>
+      </a>
+      <a href="./favoritos.html" class="nav-link">
+        <img src="/img/favoritos.png" alt="Favoritos" />
+        <span>Favoritos</span>
+      </a>
+      <a href="./cadastro.html" class="nav-link">
+        <img src="/img/registrar.png" alt="Registrar" />
+        <span>Registrar</span>
+      </a>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="maincard-cadastro">
+          <h2 class="nomedeca">fazer login</h2>
+          <div class="form-layout">
+            <form class="form-fields">
+              <div class="formulariocaixa">
+                <label for="nome">Nome de usuario</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+              <div class="formulariocaixa">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required />
+              </div>
+            </form>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="login">
+              <span>fazer login</span>
+            </button>
+            <button type="submit" class="registro">
+              <span>cadastrar-se</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

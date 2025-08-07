@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  color: #25170b;
+  background: linear-gradient(180deg, #197aef 0%, #34a61d 100%);
+  min-height: 100vh;
+}
+
+/* Header Component */
+header {
+  background-color: #8b5a2b;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.logo h1 {
+  font-size: 16px;
+  color: white;
+}
+
+.busca {
+  position: relative;
+  width: 300px;
+}
+
+.busca input {
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 40px 0 15px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+}
+
+.busca img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  right: 10px;
+}
+
+/* Navigation Component */
+nav {
+  width: 700px;
+  height: 70px;
+  background-color: #8b5a2b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 30px auto 0 auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #a67c52;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #8b6a42;
+}
+
+nav img {
+  width: 25px;
+  height: 25px;
+}
+/* Main Content Area */
+main {
+  padding: 0px 20px 20px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: #b5906d;
+  border-radius: 10px;
+  border: 10px solid #8b5a2b;
+  padding: 20px;
+  margin: 0 auto;
+}
+.titulo-secao {
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+.conteudo-das-receitas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 32px;
+  align-items: stretch;
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.destaquesdasemana {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.destaquesdasemana figure {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.destaquesdasemana img {
+  width: 65px;
+  height: 65px;
+  image-rendering: pixelated; /* para manter o estilo pixelado */
+}
+.destaquesdasemana figcaption {
+  padding: 6px 10px;
+  background-color: #a1672b;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  text-transform: lowercase;
+}
+.lista-receitas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 24px; /* linhas x colunas */
+  justify-items: center;
+}
+
+.livrin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+}
+
+.destaques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+}
+/*imagenes abaixo*/
+#logo-livro,
+#casinha {
+  width: 420px;
+  height: 160px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Page Content - Modular Content Area */
+.page-content {
+  width: 100%;
+}
+
+/* Banner Component */
+.banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner img {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.banner h2 {
+  font-size: 12px;
+  color: #25170b;
+  line-height: 1.4;
+}
+
+/* Cards Component */
+.receitas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.tempo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+}
+
+.tempo img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: calc(100% - 50px);
+}
+/* Para telas de tablets e menores (até 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    width: 90%;
+  }
+
+  .conteudo-das-receitas {
+    column-gap: 30px;
+  }
+}
+
+/* Para telas de celulares (até 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .busca {
+    width: 90%;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+
+  .nav-link span {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 8px 10px;
+  }
+
+  main .container {
+    padding: 15px;
+    border-width: 5px;
+  }
+
+  #logo-livro,
+  #casinha {
+    width: 95%;
+    height: auto;
+  }
+
+  .conteudo-das-receitas {
+    grid-template-columns: 1fr;
+  }
+
+  .destaquesdasemana {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
