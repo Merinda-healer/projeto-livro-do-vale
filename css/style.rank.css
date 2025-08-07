@@ -115,7 +115,6 @@ main {
   margin: 0 auto;
 }
 
-/* Page Content - Modular Content Area */
 .page-content {
   width: 100%;
 }
@@ -136,6 +135,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  line-height: 1.6;
 }
 
 .table {
