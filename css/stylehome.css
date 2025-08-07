@@ -10,6 +10,7 @@ body {
   color: #25170b;
   background: linear-gradient(180deg, #197aef 0%, #34a61d 100%);
   min-height: 100vh;
+  padding-top: 90px;
 }
 
 /* Header Component */
