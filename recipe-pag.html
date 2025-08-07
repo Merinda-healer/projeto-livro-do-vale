@@ -16,13 +16,13 @@
     <!-- Header Component -->
     <header>
       <div class="logo">
-        <img src="img/animals-icon.png" alt="Logo" />
+        <img src="img/Animals-Icon.png" alt="Logo" />
         <h1>Livro do Vale</h1>
       </div>
 
       <div class="busca">
         <input type="text" placeholder="Pesquisar" />
-        <img src="img/vector.png" alt="Pesquisar" />
+        <img src="img/Vector.png" alt="Pesquisar" />
       </div>
     </header>
 
@@ -34,7 +34,7 @@
       </a>
 
       <a href="./receitas.html" class="nav-link">
-        <img src="img/bolo-rosa.png" alt="Receitas" />
+        <img src="img/Bolo-rosa.png" alt="Receitas" />
         <span>Receitas</span>
       </a>
 
@@ -52,49 +52,77 @@
     <!-- Main -->
     <main>
       <div class="container">
+        <!-- Botões Superiores -->
+        <div class="top-buttons">
+          <button class="btn-voltar">
+            <span>←</span>
+            Voltar à Lista
+          </button>
+          <button class="btn-favorito">
+            <img src="img/Gold_Quality.png" alt="Favorito" />
+            Adicionar aos Favoritos
+          </button>
+        </div>
+
         <div class="page-content">
           <div class="Left">
             <section class="card">
               <div class="card-header">
-                <a href="ver-receita.html" class="btn-receita">Bolo-rosa</a>
-                <div class="tempo">
-                  <img src="img/Time_Icon.png" alt="Tempo" />
-                  <span>60min</span>
-                </div>
+                <h2 class="card-title">Bolo Rosa</h2>
               </div>
 
               <div class="card-content">
-                <div class="info">
-                  <div class="dificuldade">
-                    <img src="img/Gold_Quality.png" alt="Qualidade" />
+                <div class="card-left">
+                  <div class="card-image">
+                    <img src="img/Bolo-rosa.png" alt="Bolo Rosa" />
+                  </div>
+                  <div class="card-tempo">
+                    <img src="img/Time_Icon.png" alt="Tempo" />
+                    <span>60min</span>
+                  </div>
+                </div>
+
+                <div class="card-right">
+                  <div class="card-dificuldade">
+                    <img src="img/Gold_Quality.png" alt="Dificuldade" />
                     <span>Fácil</span>
                   </div>
-                  <div class="personagens">
-                    <img src="img/Marriage_Icon.png" alt="Personagens" />
-                    <span>Haley; Abigail</span>
+                  
+                  <div class="card-favorito">
+                    <div>
+                      <img src="img/favoritos.png" alt="Favorito" />
+                      <span>Favorito de:</span>
+                    </div>
+                    <div class="personagens-favorito">
+                      <div class="personagem">
+                        <img src="img/120px-Abigail_Neutral.png" alt="Abigail" />
+                        <span>Abigail</span>
+                      </div>
+                      <div class="personagem">
+                        <img src="img/120px-Haley_Beach_13.png" alt="Haley" />
+                        <span>Haley</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
 
-                <div class="ingredientes">
-                  <img src="img/corn.png" alt="Ingredientes" />
-                  <span>Ovo, Farinha, Morango...</span>
-                </div>
-
-                <div class="imagens">
-                  <div class="imagem-jogo">
-                    <img src="img/Bolo-rosa.png" alt="Stardew Valley" />
-                  </div>
-                  <div class="imagem-real">
-                    <img src="img/bolo.png" alt="Real" />
+                  <div class="card-disponivel">
+                    <div>
+                      <img src="img/22px-Cooking_Channel.png" alt="TV" />
+                      <span>Disponível em:</span>
+                    </div>
+                    <div class="programa">
+                      <span>Rainha do Molho</span>
+                      <span>21 Verão, Ano 2</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section>
+            <section class="ingredientes-section">
               <div class="title">
                 <img src="img/Corn.png" alt="Milho" />
-                <h2>ingredientes</h2>
+                <h2>Ingredientes</h2>
                 <img src="img/Corn.png" alt="Milho" />
               </div>
               <div class="texto">
@@ -112,18 +140,20 @@
           </div>
           <div class="Right">
             <section class="preparo">
-              <img src="img/bolo.png" />
+              <div class="preparo-image">
+                <img src="img/bolo.png" alt="Bolo Rosa" />
+              </div>
               <div class="title">
-                <img src="img/22px-Cooking_Channel.png" />Modo de Preparo<img
-                  src="img/22px-Cooking_Channel.png"
-                />
+                <img src="img/Queen_of_Sauce.png" alt="Chef" />
+                <h2>Modo de Preparo</h2>
+                <img src="img/Queen_of_Sauce.png" alt="Chef" />
               </div>
               <div class="texto">
                 <ol>
                   <li>Misture os ovos com o açúcar.</li>
                   <li>Adicione os ingredientes secos e o leite.</li>
                   <li>Incorpore o purê de morango.</li>
-                  <li>Asse a 180 °C por 35 minutos.</li>
+                  <li>Asse a 180 °C por 35 minutos.</li>
                   <li>Cubra com chantilly rosa (opcional).</li>
                 </ol>
               </div>

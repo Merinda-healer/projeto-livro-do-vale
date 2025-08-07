@@ -198,8 +198,15 @@ main {
   nav span {
     display: none;
   }
-
+  .table-section {
+    overflow-x: auto;
+  }
   .title {
+    font-size: 12px;
     gap: 3px;
+  }
+  .intro p {
+    text-align: left;
+    margin: 10px;
   }
 }
