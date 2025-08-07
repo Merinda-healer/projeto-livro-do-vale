@@ -211,6 +211,7 @@ main {
   align-items: center;
   gap: 5px;
   font-size: 10px;
+  line-height: 1.2;
 }
 
 .dificuldade img,
